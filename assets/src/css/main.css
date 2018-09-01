@@ -1,0 +1,137 @@
+/*------------------------------------*    #TABLE-OF-CONTENTS When in doubt, follow http://cssguidelin.es/ \*------------------------------------*/
+/*------------------------------------*    #IMPORTS
+\*------------------------------------*/
+/*------------------------------------*    #BASE
+\*------------------------------------*/
+/*------------------------------------*    #WORDPRESS-CORE
+\*------------------------------------*/
+.alignnone { margin: 5px 20px 20px 0; }
+
+.aligncenter, div.aligncenter { display: block; margin: 5px auto 5px auto; }
+
+.alignright { float: right; margin: 5px 0 20px 20px; }
+
+.alignleft { float: left; margin: 5px 20px 20px 0; }
+
+a img.alignright { float: right; margin: 5px 0 20px 20px; }
+
+a img.alignnone { margin: 5px 20px 20px 0; }
+
+a img.alignleft { float: left; margin: 5px 20px 20px 0; }
+
+a img.aligncenter { display: block; margin-left: auto; margin-right: auto; }
+
+.wp-caption { background: #FFF; border: 1px solid #F0F0F0; max-width: 96%; padding: 5px 3px 10px; text-align: center; }
+
+.wp-caption.alignnone { margin: 5px 20px 20px 0; }
+
+.wp-caption.alignleft { margin: 5px 20px 20px 0; }
+
+.wp-caption.alignright { margin: 5px 0 20px 20px; }
+
+.wp-caption img { border: 0 none; height: auto; margin: 0; max-width: 98.5%; padding: 0; width: auto; }
+
+.wp-caption .wp-caption-text, .gallery-caption { font-size: 11px; line-height: 17px; margin: 0; padding: 0 4px 5px; }
+
+/*------------------------------------*    #HELPERS
+\*------------------------------------*/
+/*------------------------------------*    #ANIMATIONS
+\*------------------------------------*/
+/*------------------------------------*    #EXTENDS
+\*------------------------------------*/
+/*------------------------------------*    #MIXINS
+
+	- remove-text
+	- no-bullets
+	- no-margin-padding
+	- circle
+	- clearfix
+	- blend-mode
+	- arrow
+	- hamburger
+	- aspect-ratio
+
+\*------------------------------------*/
+/** LIST STYLING */
+/** CIRCLE */
+/** CLEARFIX Should be placed on the container, wrapping item https://rachelandrew.co.uk/archives/2017/01/24/the-end-of-the-clearfix-hack/ */
+/*------------------------------------*	REFERENCE: https://css-tricks.com/basics-css-blend-modes/ Possible mode options: screen, overlay, darker, lighten, color-dodge, color-burn, hard-light, soft-light, difference, exclusion, hue, saturation, color, luminosity, and normal \*------------------------------------*/
+/** HAMBURGER Reference: https://css-tricks.com/three-line-menu-navicon/ */
+/* ASPECT RATIOS: https://css-tricks.com/snippets/sass/maintain-aspect-ratio-mixin/ The mixin assumes you'll be nesting an element with the class of content inside your initial block. HTML: <div class="sixteen-nine"> <div class="content"> insert content here this will maintain a 16:9 aspect ratio </div> </div> Using the mixin: .sixteen-nine { @include aspect-ratio(16, 9); } */
+/*------------------------------------*    #FUNCTIONS
+\*------------------------------------*/
+/* px to em https://css-tricks.com/snippets/sass/px-to-em-functions/ */
+/*------------------------------------*    #COLOR
+\*------------------------------------*/
+.black-and-white { -webkit-filter: grayscale(100%); }
+
+.color { -webkit-filter: grayscale(0%); }
+
+/*------------------------------------*    #BREAKPOINTS
+\*------------------------------------*/
+/*------------------------------------*    #VARIABLES
+\*------------------------------------*/
+/* GLOBAL */
+/* COLORS */
+/* FONTS */
+/*------------------------------------*    #THEME
+\*------------------------------------*/
+h1, h2, h3, h4, h5, h6 { font-family: "Oswald"; }
+
+p { font-family: "Roboto Condensed"; }
+
+/*------------------------------------*    #ARROWS
+\*------------------------------------*/
+/* Angled Bracket 
+Reference: http://stackoverflow.com/questions/27492191/how-to-make-a-fancy-arrow-using-css */
+/*------------------------------------*    #ZINDEX Controls all vertical stacking in one place Reference: http://css-tricks.com/handling-z-index/ Can now use elsewhere in code with: .header { z-index: map-get($zindex, header); } \*------------------------------------*/
+/*------------------------------------*    #VENDORS
+\*------------------------------------*/
+/*------------------------------------*    #REDEFINE
+\*------------------------------------*/
+/*------------------------------------*    #GLOBALS
+\*------------------------------------*/
+html, html > body, body { margin: 0; padding: 0; }
+
+body { font-size: 16px; }
+
+/*------------------------------------*    #FORM
+\*------------------------------------*/
+form { margin: 0; padding: 0; }
+
+input[type=text], input[type=email], input[type=url], input[type=phone], textarea { border: none; -webkit-box-shadow: none; box-shadow: none; outline: none; text-shadow: none; }
+
+input[type=text]:hover, input[type=email]:hover, input[type=url]:hover, input[type=phone]:hover, textarea:hover { border: none; outline: none; }
+
+input[type=text]:focus, input[type=email]:focus, input[type=url]:focus, input[type=phone]:focus, textarea:focus { border: none; -webkit-box-shadow: none; box-shadow: none; outline: none; text-shadow: none; }
+
+button, input[type=submit] { border: none; cursor: pointer; }
+
+/*------------------------------------*    #HR
+\*------------------------------------*/
+.hr--space { background: none; border: none; height: 1px; margin: 15px 0; }
+
+/*------------------------------------*    #LINKS
+\*------------------------------------*/
+/*------------------------------------*    #TYPOGRAPHY
+\*------------------------------------*/
+/*------------------------------------*    #BUTTONS
+\*------------------------------------*/
+/*------------------------------------*    #LAYOUT
+\*------------------------------------*/
+/*------------------------------------*    #HEADER
+\*------------------------------------*/
+/*------------------------------------*    #NAV
+\*------------------------------------*/
+/*------------------------------------*    #FOOTER
+\*------------------------------------*/
+/*------------------------------------*    #PIECES
+\*------------------------------------*/
+/*------------------------------------*    #GRAVITY-FORMS
+\*------------------------------------*/
+/*------------------------------------*    #RATIOS Reference: http://www.mademyday.de/css-height-equals-width-with-pure-css.html DOM should look like this: | <div class="ratio__box">  | 	<div class="ratio__content">Aspect ratio of 1:1</div>  | </div> Just remember, these are set up as extends and not as actual class names ** \*------------------------------------*/
+/*------------------------------------*    #PAGES
+\*------------------------------------*/
+.home { background: black; }
+
+/*# sourceMappingURL=main.css.map */
