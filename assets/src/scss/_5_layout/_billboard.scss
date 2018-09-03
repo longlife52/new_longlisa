@@ -1,0 +1,33 @@
+/* BILLBOARD */
+
+.billboard_blue_wrapper {
+    background: $main-blue;
+    color: $white;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+
+    h2 {
+        font-family: $roboto;
+        margin: 0;
+    }
+
+    p {
+        font-size: 2em;
+    }
+}
+
+.billboard_title_top {
+    text-transform: lowercase;
+    font-size: 15em;
+}
+
+.billboard_title_bottom {
+    text-transform: uppercase;
+    font-size: 10em;
+    line-height: 0.40em;
+}
+
+.billboard_para {
+    margin-top: 8em;
+}
