@@ -4,27 +4,33 @@
 
 header {
 
+
 }
-
-
-
 
 
 /*------------------------------------*\
     #NAV
 \*------------------------------------*/
 
+/* for responsive nav, plan to use https://codepen.io/kevinpowell/pen/jxppmr  with his video tutorial at https://www.youtube.com/watch?v=8QKOaTYvYUA */
+
 .nav {
 
 	ul {
-		
-		> li {
+        @include no-bullets;
 
-			> a {
+        li {
 
-				&:hover {
-				}
-			}
-		}
-	}
+            a {
+                font-family: $roboto;
+                color: $red;
+                text-transform: lowercase;
+                text-decoration: none;
+
+            &:hover {
+                    color: $bright-blue;
+                }
+            }
+        }
+    }
 }

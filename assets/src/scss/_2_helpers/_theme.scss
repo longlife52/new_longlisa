@@ -10,19 +10,27 @@
 
 // TYPOGRAPHY
 h1,
+ {
+    font-family: $roboto;
+}
+
 h2,
 h3,
 h4,
 h5,
-h6, {
-    font-family: $oswald
+h6,
+ {
+    font-family: $oswald;
 }
 
 p {
-    font-family: $roboto
+    font-family: $roboto;
 }
 
-
+// HIDE
+.hide {
+    display: none;
+}
 
 
 // SPACING, MARGINS, AND PADDING
