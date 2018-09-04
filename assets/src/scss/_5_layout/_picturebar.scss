@@ -1,0 +1,12 @@
+/* PICTURE BAR */
+
+.picture_bar_two-third {
+    display: flex;
+    background-color: $main-blue;
+    padding-bottom: 3em;
+    margin-bottom: 3em;
+
+        img {
+            width: 100%;
+        }
+}
