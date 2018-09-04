@@ -31,4 +31,10 @@ body {
     margin: auto;
     max-width: 1300px;
     background-color: $white;
+    display: grid;
+}
+
+// DROP SHADOW ON BOTTOM ONLY FOR CARDS
+.bottom_edge_shadow {
+    box-shadow: 0 em(8px) em(6px) em(-6px) $background-blue;
 }
