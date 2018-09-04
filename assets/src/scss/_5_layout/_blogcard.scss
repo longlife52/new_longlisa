@@ -12,7 +12,7 @@
     }
 
     p {
-        font-size: 1.5em;
+        font-size: 1.75em;
     }
 }
 
@@ -38,11 +38,14 @@
     h5 {
         text-transform: uppercase;
         font-size: 1.25em;
+        margin-bottom: 0;
+        color: $main-blue;
     }
 
     h4 {
         font-size: 2em;
-        padding-bottom: 2em;
+        margin-top: 0;
+        padding: 0 em(5px) 2em em(5px);
     }
 
 }

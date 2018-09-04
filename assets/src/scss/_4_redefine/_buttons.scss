@@ -69,9 +69,6 @@
     border-radius: 50%;
     font-weight: bold;
     text-transform: lowercase;
-    display: grid;
-    justify-content: center;
-    align-items: center;
     margin-right: em(10px);
     margin-bottom: em(10px);
     position: absolute;
@@ -86,5 +83,9 @@
     &:active {
         border: em(3px) $yellow solid;
         background: $white;
+    }
+
+    p {
+        margin-top: 0.60em;
     }
 }
