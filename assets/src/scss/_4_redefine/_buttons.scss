@@ -1,3 +1,61 @@
 /*------------------------------------*\
     #BUTTONS
 \*------------------------------------*/
+
+/* ghost buttons */
+.button-box {
+    padding: 3em 0 3em 0;
+}
+
+.ghost_button {
+    display: inline-block;
+    width: 10em;
+    font-weight: bold;
+    padding: 0.5em;
+    text-align: center;
+    outline: none;
+    text-decoration: none;
+    transition: background-color 0.2s ease-out, color 0.2s ease-out;
+    text-transform: uppercase;
+}
+
+/* teal and white */
+.ghost_btn_teal {
+    border: 0.1875em solid $bright_blue;
+
+    &:hover,
+    &:active {
+        background-color: $bright-blue;
+        color: $background-blue;
+        transition: background-color 0.3s ease-in, color 0.3s ease-in;
+    }
+}
+
+/* red button */
+.btn_red {
+    background: $red;
+    border: none;
+    color: $white;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: em(10px);
+    font-size: em(16px);
+
+    &:hover {
+        background: $white;
+        color: $red;
+    }
+}
+
+/* white and white button */
+.ghost_btn_white {
+    border: 0.1875em solid $white;
+    color: $white;
+    &:hover,
+    &:active {
+        background-color: $white;
+        color: $background-blue;
+        transition: background-color 0.3s ease-in, color 0.3s ease-in;
+    }
+}

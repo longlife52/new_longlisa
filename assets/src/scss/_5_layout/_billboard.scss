@@ -1,20 +1,40 @@
 /* BILLBOARD */
 
+.billboard {
+    max-width: 775px;
+    margin: auto;
+    overflow: hidden;
+
+    h2 {
+        font-family: $roboto;
+        margin: 0;
+        animation-duration: 1s;
+        animation-name: fadeAndScale;
+        animation-timing-function: cubic-bezier(0.71, 0.55, 0.62, 1.57);
+    }
+
+    p {
+        font-size: em(32px);
+    }
+}
+
+@keyframes fadeAndScale {
+        from {
+            opacity: 0;
+            transform: scale (0.9, 0.9);
+        }
+        to {
+            opacity: 1;
+            transform: scale(1, 1);
+        }
+    }
+
 .billboard_blue_wrapper {
     background: $main-blue;
     color: $white;
     display: grid;
     justify-content: center;
     align-items: center;
-
-    h2 {
-        font-family: $roboto;
-        margin: 0;
-    }
-
-    p {
-        font-size: 2em;
-    }
 }
 
 .billboard_title_top {
@@ -27,6 +47,8 @@
     font-size: 10em;
     line-height: 0.40em;
 }
+
+
 
 .billboard_para {
     margin-top: 8em;

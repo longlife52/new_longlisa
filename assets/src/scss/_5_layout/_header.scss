@@ -15,6 +15,7 @@ header {
 /* for responsive nav, plan to use https://codepen.io/kevinpowell/pen/jxppmr  with his video tutorial at https://www.youtube.com/watch?v=8QKOaTYvYUA */
 
 .nav {
+    background-color: $background-blue;
 
 	ul {
         @include no-bullets;
@@ -23,12 +24,13 @@ header {
 
             a {
                 font-family: $roboto;
-                color: $red;
+                color: $white;
+                font-size: 1.5em;
                 text-transform: lowercase;
                 text-decoration: none;
 
             &:hover {
-                    color: $bright-blue;
+                    color: $yellow;
                 }
             }
         }
