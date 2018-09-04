@@ -31,10 +31,14 @@
 
 .billboard_blue_wrapper {
     background: $main-blue;
-    color: $white;
     display: grid;
     justify-content: center;
     align-items: center;
+
+        h2,
+        p {
+            color: $white;
+        }
 }
 
 .billboard_title_top {

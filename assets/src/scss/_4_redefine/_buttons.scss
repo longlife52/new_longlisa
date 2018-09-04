@@ -59,3 +59,29 @@
         transition: background-color 0.3s ease-in, color 0.3s ease-in;
     }
 }
+
+/* round yellow button */
+.btn_round {
+    display: block;
+    background: $yellow;
+    height: em(75px);
+    width: em(75px);
+    border-radius: 50%;
+    font-weight: bold;
+    text-transform: lowercase;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2em;
+
+
+    a {
+        text-decoration: none;
+    }
+
+    &:hover,
+    &:active {
+        border: em(3px) $yellow solid;
+        background: $white;
+    }
+}
