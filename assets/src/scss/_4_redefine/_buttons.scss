@@ -61,6 +61,15 @@
 }
 
 /* round yellow button */
+.card_flex {
+    display: flex;
+    flex-direction: column;
+}
+
+.btn_round_wrapper {
+    align-self: flex-end;
+}
+
 .btn_round {
     display: block;
     background: $yellow;
@@ -72,8 +81,8 @@
     display: grid;
     justify-content: center;
     align-items: center;
-    margin-bottom: 2em;
-
+    margin-right: em(10px);
+    margin-bottom: em(10px);
 
     a {
         text-decoration: none;
