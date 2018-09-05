@@ -4,7 +4,7 @@
     Controls all vertical stacking in one place
     Reference: http://css-tricks.com/handling-z-index/
 
-    
+
     Can now use elsewhere in code with:
 
     	.header {
@@ -13,9 +13,10 @@
 \*------------------------------------*/
 
 $zindex: (
-  // modal     : 9000, 
-  // overlay   : 8000,
-  // dropdown  : 7000,
-  // header    : 6000,
-  // footer    : 5000
+  modal     : 9000,
+  overlay   : 8000,
+  dropdown  : 7000,
+  header    : 6000,
+  footer    : 5000,
+  background: 4000
 );

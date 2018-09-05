@@ -19,7 +19,7 @@
     text-transform: uppercase;
 }
 
-/* teal and white */
+/* bright blue outline and white */
 .ghost_btn_blue {
     border: 0.1875em solid $bright_blue;
 
@@ -31,7 +31,41 @@
     }
 }
 
-/* red button */
+/* solid blue button */
+
+.btn_blue {
+    display: block;
+    background: $grey-blue;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: em(10px);
+    font-size: em(16px);
+    width: 10em;
+
+
+    a {
+        text-decoration: none;
+            p {
+                color: $white;
+                margin: 0;
+            }
+    }
+
+    &:hover,
+    &:active {
+        background: $white;
+        color: $grey-blue;
+        border: 0.1875em solid $grey-blue;
+        transition: background-color 0.3s ease-in, color 0.3s ease-in;
+
+        p {
+            color: $grey-blue;
+        }
+    }
+}
+
+/* solid red button */
 .btn_red {
     background: $red;
     border: none;
@@ -42,7 +76,8 @@
     padding: em(10px);
     font-size: em(16px);
 
-    &:hover {
+    &:hover,
+    &:active {
         background: $white;
         color: $red;
     }
