@@ -38,3 +38,11 @@ body {
 .bottom_edge_shadow {
     box-shadow: 0 em(8px) em(6px) em(-6px) $background-blue;
 }
+
+// USE TO CENTER A PARAGRAPH THAT IS UNDER A MAIN title
+// and to contain its space; must put <p> in a <div>
+// put this class on the <div>
+.sub_title_para {
+    max-width: 750px;
+    margin: auto;
+}
