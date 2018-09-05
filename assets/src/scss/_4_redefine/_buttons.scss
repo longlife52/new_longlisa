@@ -124,3 +124,33 @@
         margin-top: 0.60em;
     }
 }
+
+/* solid blue button */
+
+.btn_yellow {
+    display: block;
+    background: $yellow;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: em(10px);
+    font-size: em(16px);
+    width: cover;
+
+
+    a {
+        text-decoration: none;
+            p {
+                color: $background-blue;
+                margin: 0;
+                text-align: center;
+            }
+    }
+
+    &:hover,
+    &:active {
+        background: $white;
+        border: 0.1875em solid $yellow;
+        transition: background-color 0.3s ease-in, color 0.3s ease-in;
+    }
+}
