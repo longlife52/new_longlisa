@@ -38,19 +38,38 @@
 
 .square_three {
     background: $background-blue;
+    position: relative;
 
     p {
         color: $background-blue;
+    }
+
+    img {
+        position: absolute;
+        width: em(40px);
+        margin-left: 2em;
+        margin-top: 2em;
     }
 }
 
 .square_testimonial_wrapper {
     background-color: $white;
-    margin: 4em 3em 5em 10em;
+    margin: 4em 1em 5em 5em;
+    position: relative;
+}
+
+.square_testimonial_button_align {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    p {
+        margin: 0;
+    }
 }
 
 .square_testimonial {
-    padding: 2em 2em 0 2em;
+    padding: 2em 2em 1.25em 2em;
     font-size: 1.25em;
 }
 
@@ -60,6 +79,25 @@
 
 .square_four {
     background: $bright-blue;
+}
+
+@include breakpoint(large-mobile) {
+    .square_testimonial_wrapper {
+        margin: 4em 3em 5em 10em;
+    }
+
+    .square_three {
+        img {
+            width: em(100px);
+            margin-left: 2em;
+            margin-top: 2em;
+        }
+    }
+
+    .square_testimonial_wrapper {
+        margin: 4em 3em 5em 10em;
+    }
+
 }
 
 @include breakpoint(portrait) {
