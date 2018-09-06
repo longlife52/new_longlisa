@@ -1,0 +1,81 @@
+/* FOUR SQUARE GRID LAYOUT */
+.four_square_wrapper {
+    display: grid;
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.square {
+    display: flex;
+    flex-direction: columns;
+    justify-content: center;
+    align-items: center;
+}
+
+.square_details {
+    padding: 2em em(5px) 2em em(5px);
+
+    h6 {
+        color: $white;
+        font-size: 3em;
+        text-align: center;
+        margin: 0;
+    }
+}
+
+.square_one {
+    background: $grey-blue;
+    margin: 0;
+    padding: 0;
+}
+
+.square_two {
+    background-color: $background-blue;
+}
+
+.square_three {
+    background: $background-blue;
+
+    p {
+        color: $background-blue;
+    }
+}
+
+.square_testimonial_wrapper {
+    background-color: $white;
+    margin: 4em 3em 5em 10em;
+}
+
+.square_testimonial {
+    padding: 2em 2em 0 2em;
+    font-size: 1.25em;
+}
+
+.square_testimonial_name {
+    padding: 0 0 2em 2em;
+}
+
+.square_four {
+    background: $bright-blue;
+}
+
+@include breakpoint(portrait) {
+    .four_square_wrapper {
+        grid-template-columns: repeat(2, minmax(320px, 1fr));
+        grid-gap: em(5px);
+    }
+
+    .square_two {
+        background-color: $yellow;
+    }
+
+    .square_details {
+
+        h6 {
+            font-size: 3em;
+        }
+    }
+}

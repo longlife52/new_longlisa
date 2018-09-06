@@ -27,6 +27,7 @@
 @include breakpoint (portrait) {
     .blog-card-wrapper {
         grid-template-columns: 1fr 1fr 1fr;
+        max-width: 900px;
     }
 }
 
@@ -54,50 +55,3 @@
     }
 
 }
-
-
-
-/*
-.card-three {
-    display: flex;
-    flex-direction: column;
-    padding: em(20px);
-    background: $white;
-    color: $background-blue;
-
-    h3 {
-        text-align: center;
-        text-transform: uppercase;
-        font-size: 1.5em;
-    }
-
-    p {
-        padding-left: em(10px);
-    }
-
-    a {
-        align-self: flex-end;
-        width: 100%;
-        margin-top: auto;
-    }
-}
-
-.card-three__image {
-    text-align: center;
-    width: 100%;
-}
-
-.card-three__image img {
-    width: 100%;
-    height: auto;
-}
-
-.card-three__read-more {
-    align-self: flex-end;
-    margin-top: auto;
-
-    button {
-        width: 100%;
-    }
-}
-*/

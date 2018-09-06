@@ -46,3 +46,13 @@ body {
     max-width: 750px;
     margin: auto;
 }
+
+/* this code forces a button to land on the bottom of a card; must use .align_bottom on parent container of the individual card and use .align_button_bottom on the <div> for the button*/
+.align_bottom {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.align_button_bottom {
+    margin-top: auto;
+}

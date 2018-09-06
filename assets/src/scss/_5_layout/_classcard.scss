@@ -1,5 +1,5 @@
 /*  CLASS CARDS */
-.class_preview {
+.class_preview_wrapper {
     display: grid;
     justify-content: center;
     align-items: center;
@@ -44,6 +44,7 @@
     .class-card-wrapper {
         grid-template-columns: 1fr 1fr 1fr;
         grid-gap: em(20px);
+        max-width: 900px;
     }
 }
 
@@ -52,15 +53,6 @@
     background-color: $light-grey-blue;
 }
 
-/* this code forces a button to land on the bottom of a card; must use .align_bottom on parent container of the individual card and use .align_button_bottom on the <div> for the button*/
-.align_bottom {
-    display: flex;
-    flex-flow: column nowrap;
-}
-
-.align_button_bottom {
-    margin-top: auto;
-}
 
 
 /* look at this code for how to do a ...read more  look at the <a> tag*/
