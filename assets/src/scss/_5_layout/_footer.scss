@@ -4,6 +4,35 @@
 .footer {
 
 	.copyright {
-		
+
 	}
+}
+
+.newsletter_signup {
+    background-color: $grey-blue;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.newsletter_video {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h3 {
+        color: $white;
+        font-size: 2em;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+
+    }
+
+}
+
+.ctct-inline-form {
+    margin: 2em;
 }

@@ -27,7 +27,7 @@
 @include breakpoint (portrait) {
     .blog-card-wrapper {
         grid-template-columns: 1fr 1fr 1fr;
-        max-width: 900px;
+        max-width: 750px;
     }
 }
 
