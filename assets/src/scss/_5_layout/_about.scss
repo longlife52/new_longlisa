@@ -6,7 +6,6 @@
     background-position: bottom right;
     border-top: $light-blue 2em solid;
     z-index: map-get($zindex, background);
-
 }
 
 .about_wrapper {
@@ -37,8 +36,6 @@
         align-items: center;
         justify-content: center;
         margin-bottom: 2em;
-        margin-left: 2em;
-        margin-right: 2em;
 }
 
 .about_content {
@@ -62,6 +59,14 @@
 
 .about_button_wrapper {
     align-self: center;
+}
+
+@include breakpoint(large-mobile) {
+    .about_content_wrapper {
+            margin-bottom: 2em;
+            margin-left: 2em;
+            margin-right: 2em;
+    }
 }
 
 @media (min-width: 700px) {
