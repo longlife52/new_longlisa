@@ -53,6 +53,10 @@ body {
     flex-flow: column nowrap;
 }
 
+// this has to added later in style sheet with each //occurance to remove an <p> padding
 .align_button_bottom {
     margin-top: auto;
+     p {
+         padding-bottom: 0;
+     }
 }

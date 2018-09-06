@@ -4,6 +4,7 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+    margin-bottom: 4em;
 
     h3 {
         font-size: 4em;
@@ -16,12 +17,12 @@
         font-size: 2em;
         color: $white;
         margin: 0;
-        padding: 1em em(10px) 1em em(10px);
+        padding: 1em em(5px) 1em em(5px);
         background-color: $main-blue;
     }
 
     p {
-        font-size: 1.50em;
+        font-size: 1.25em;
         text-align: left;
         padding: 0 em(10px) 1.5em em(10px);
     }
@@ -33,10 +34,21 @@
 }
 
 /* 3 column  class cards */
+.class_preview_wrapper {
+    h4 {
+        font-size: 1.25em;
+    }
+}
+
 .class-card-wrapper {
     display: grid;
     grid-gap: em(80px);
     padding: 3em 0 em(50px) 0;
+}
+
+/* single class type wrapper */
+.class_type_wrapper {
+    background-color: $light-grey-blue;
 }
 
 @include breakpoint (portrait) {
@@ -47,11 +59,14 @@
     }
 }
 
-/* single class type wrapper */
-.class_type_wrapper {
-    background-color: $light-grey-blue;
+// this must be added to over ride the p styles
+// so button centers; will have to use elsewhere
+// has to be here because of cascading style sheets
+.align_button_bottom {
+     p {
+         padding-bottom: 0;
+     }
 }
-
 
 
 /* look at this code for how to do a ...read more  look at the <a> tag*/

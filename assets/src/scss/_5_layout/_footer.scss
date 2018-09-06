@@ -10,8 +10,6 @@
 
 .newsletter_signup {
     background-color: $grey-blue;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
 }
 
 .newsletter_video {
@@ -28,11 +26,25 @@
     img {
         width: 100%;
         height: auto;
-
     }
+}
 
+.newsletter_video_box {
+    margin: 0 3em 0 3em;
 }
 
 .ctct-inline-form {
     margin: 2em;
+}
+
+@include breakpoint(landscape) {
+    .newsletter_signup {
+        background-color: $grey-blue;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .newsletter_video_box {
+        margin: 0;
+    }
 }
