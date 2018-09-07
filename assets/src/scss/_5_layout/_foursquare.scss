@@ -81,6 +81,12 @@
     background: $bright-blue;
 }
 
+.square_four_details {
+    h6:first-of-type {
+        padding-top: 0.5em;
+    }
+}
+
 @include breakpoint(large-mobile) {
     .square_testimonial_wrapper {
         margin: 4em 3em 5em 10em;
@@ -99,6 +105,16 @@
     }
 }
 
+@include breakpoint(small) {
+    .square_three {
+        img {
+            width: em(100px);
+            margin-left: 2em;
+            margin-top: 2em;
+        }
+    }
+}
+
 @include breakpoint(portrait) {
     .four_square_wrapper {
         grid-template-columns: repeat(2, minmax(320px, 1fr));
@@ -109,10 +125,22 @@
         background-color: $yellow;
     }
 
+    .square_three {
+        img {
+            width: em(75px);
+            margin-left: 2em;
+            margin-top: 2em;
+        }
+    }
+
     .square_details {
 
         h6 {
             font-size: 3em;
         }
+    }
+
+    .square_testimonial_wrapper {
+        margin: 4em 3em 5em 8em;
     }
 }
