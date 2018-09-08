@@ -41,3 +41,7 @@ Wobble To Top Right */
     animation-timing-function: ease-in-out;
     animation-iteration-count: 1;
 }
+
+// GROW hover Effect
+.grow { transition: all .2s ease-in-out; }
+.grow:hover { transform: scale(1.1); }

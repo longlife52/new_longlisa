@@ -18,8 +18,18 @@ header {
     }
 }
 
-.logo {
+.logo_name {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
+    img {
+        padding-left: em(10px);
+        padding-right: em(10px);
+        padding-top: em(10px);
+        padding-bottom: em(0px);
+    }
 }
 
 /* responsive nav toggle */
@@ -120,6 +130,9 @@ header {
   transition: opacity 250ms ease-in-out 250ms;
 }
 
+
+// BREAKPOINTS
+
 @include breakpoint (smaller-screen){
   .nav-toggle-label {
     display: none;
@@ -133,6 +146,15 @@ header {
         padding-bottom: 1em;
         padding-top: 1em;
     }
+  }
+
+  .logo_name {
+      display: flex;
+      flex-direction: row;
+
+      img {
+          padding-bottom: em(10px);
+      }
   }
 
   .logo {
