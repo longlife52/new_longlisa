@@ -11,6 +11,10 @@
         animation-duration: 1s;
         animation-name: fadeAndScale;
         animation-timing-function: cubic-bezier(0.71, 0.55, 0.62, 1.57);
+
+        &:first-of-type {
+            padding-top: 0.5em;
+        }
     }
 
     p {
