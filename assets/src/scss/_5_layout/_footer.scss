@@ -2,10 +2,43 @@
     #FOOTER
 \*------------------------------------*/
 .footer {
+    ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: $roboto;
+        @include no-bullets;
+        padding-top:6em;
+        padding-bottom: 1em;
+        color: $main-blue;
+
+        li {
+            padding-left: 1em;
+        }
+    }
 
 	.copyright {
-
+        a {
+            color: $grey-blue;
+        }
 	}
+}
+
+.footer_para {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ya_disclaimer {
+    font-size: em(9px);
+    padding-left: em(20px);
+    padding-right: em(20px);
+    padding-bottom: em(100px);
+    color: $main-blue;
+    max-width: 500px;
+    justify-content: center;
+
 }
 
 .newsletter_signup {
@@ -13,8 +46,7 @@
 }
 
 .newsletter_video {
-    display: flex;
-    flex-direction: column;
+    display: grid;
     justify-content: center;
     align-items: center;
 
@@ -38,7 +70,10 @@
 
 .ctct-inline-form {
     margin: 2em;
+    padding-bottom: 2em;
 }
+
+//BREAKPOINTS
 
 @include breakpoint(landscape) {
     .newsletter_signup {
