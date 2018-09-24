@@ -3,9 +3,9 @@
 \*------------------------------------*/
 .footer {
     ul {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        place-items: center center;
         font-family: $roboto;
         @include no-bullets;
         padding-top:6em;
@@ -14,10 +14,14 @@
 
         li {
             padding-left: 1em;
+            padding-bottom: 2em;
         }
     }
 
 	.copyright {
+        display: flex;
+        align-items: center;
+        justify-content: center;
         a {
             color: $grey-blue;
         }
@@ -74,6 +78,20 @@
 }
 
 //BREAKPOINTS
+
+@include breakpoint(large-mobile) {
+    .footer {
+        ul {
+            grid-template-columns: repeat(5, 1fr);
+        }
+    }
+
+    .credentials_box_width {
+        max-width: 500px;
+        display: block;
+        margin:auto;
+    }
+}
 
 @include breakpoint(landscape) {
     .newsletter_signup {
