@@ -1,0 +1,33 @@
+/* ICON CARDS - 3 in a row
+note: these cards use styles from class card.scss to create the grid + responsiveness */
+
+.class-card-wrapper {
+    a{
+        text-decoration: none;
+    }
+
+}
+
+.icon_card_wrapper {
+    background-color: $main-blue;
+}
+
+.icon_individual_card:hover {
+    background: $light-blue;
+}
+
+.icon_individual_card {
+    border-radius: 50%;
+    img {
+        padding-top: 1em;
+    }
+}
+
+.icon_text_color {
+    color: $white;
+    text-align: center;
+}
+
+.grow:hover {
+    transform: scale(1.1);
+}

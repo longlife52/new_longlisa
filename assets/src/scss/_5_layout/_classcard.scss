@@ -23,14 +23,20 @@
 
     p {
         font-size: 1.25em;
-        text-align: left;
+
         padding: 0 em(10px) 1.5em em(10px);
     }
+}
 
+.responsive_image {
     img {
         width: 100%;
         height: auto;
     }
+}
+
+.class_card_text_align {
+    text-align: left;
 }
 
 /* 3 column  class cards */
