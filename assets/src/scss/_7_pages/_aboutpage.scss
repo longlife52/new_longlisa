@@ -90,6 +90,10 @@
     }
 }
 
+.about_picture_bar {
+    margin-bottom: 0;
+}
+
 @include breakpoint(next-mobile) {
     .lisa_story_title {
 
