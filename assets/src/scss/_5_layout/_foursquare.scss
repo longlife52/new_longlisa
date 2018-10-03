@@ -6,6 +6,7 @@
         width: 100%;
         height: auto;
     }
+
 }
 
 .square {
@@ -32,8 +33,25 @@
     padding: 0;
 }
 
+.square_one_content {
+    padding-top: 3em;
+}
+
+.fill {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
 .square_two {
     background-color: $background-blue;
+
+    img {
+        flex-shrink: 0;
+        min-width: 100%;
+        min-height: 100%;
+    }
 }
 
 .square_three {
@@ -50,6 +68,7 @@
         margin-left: 2em;
         margin-top: 2em;
     }
+
 }
 
 .square_testimonial_wrapper {
@@ -92,6 +111,7 @@
         margin: 4em 3em 5em 10em;
     }
 
+
     .square_three {
         img {
             width: em(100px);
@@ -99,6 +119,7 @@
             margin-top: 2em;
         }
     }
+
 
     .square_testimonial_wrapper {
         margin: 4em 3em 5em 10em;
@@ -106,6 +127,7 @@
 }
 
 @include breakpoint(small) {
+
     .square_three {
         img {
             width: em(100px);
@@ -115,15 +137,47 @@
     }
 }
 
-@include breakpoint(portrait) {
+@include breakpoint(portrait-large) {
     .four_square_wrapper {
-        grid-template-columns: repeat(2, minmax(320px, 1fr));
-        grid-gap: em(5px);
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 400px 400px;
+        grid-gap: em(16px) em(16px);
+        justify-content: stretch;
+        align-content: start;
+    }
+
+    .grid_square_one {
+        grid-column-start: 1;
+        grid-column-end: 7;
+        grid-row: 1;
+        justify-self: stretch;
+    }
+
+    .grid_square_two {
+        grid-column-start: 7;
+        grid-column-end: 13;
+        grid-row: 1;
+        justify-self: stretch;
+    }
+
+    .grid_square_three {
+        grid-column-start: 1;
+        grid-column-end: 7;
+        grid-row: 2;
+        justify-self: stretch;
+    }
+
+    .grid_square_four {
+        grid-column-start: 7;
+        grid-column-end: 13;
+        grid-row: 2;
+        justify-self: stretch;
     }
 
     .square_two {
         background-color: $yellow;
     }
+
 
     .square_three {
         img {
