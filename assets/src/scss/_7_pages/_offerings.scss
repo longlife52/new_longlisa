@@ -12,6 +12,7 @@
 
 .offering_billboard {
     margin-top: 5em;
+    margin-bottom: 2em;
 }
 
 .offering_title_top {
@@ -32,87 +33,143 @@
 
 // styles for offerings grid
 .offering_tile_wrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 364px 364px 364px;
-    grid-gap: 16px 16px;
-    justify-content: stretch;
-    align-content: start;
 
-    p {
-        color: $white;
-        font-size: 1.5em;
-        padding-left: 2em;
-        padding-right: 1em;
+    h3 {
+        margin: 0;
+        padding-top: 1em;
     }
+}
+
+.offering_tile_wrapper {
+    display: grid;
+    grid-template-rows: 400px 400px 400px 400px 400px 400px 400px 400px;
 }
 
 .offering_tile_title {
     text-transform:uppercase;
     font-size: 3em;
-    padding-left: 1em;
+    padding-left: em(10px);
     color: $white;
 }
 
+.offering_para {
+    color: $white;
+    font-size: 1.4em;
+    padding-left: em(24px);
+    padding-right: em(10px);
+}
+
 .offering_tile_one {
-    grid-column-start: 1;
-    grid-column-end: 7;
-    grid-row: 1;
-    justify-self: stretch;
-    background: $light-blue;
+    background: $dark-blue;
 }
 
 .offering_tile_two {
-    grid-column-start: 7;
-    grid-column-end: 13;
-    grid-row: 1;
-    justify-self: stretch;
     background: $grey-blue;
-
-    h3 {
-        color: $white;
-    }
 }
 
 .offering_tile_three {
-    grid-column-start: 1;
-    grid-column-end: 6;
-    grid-row: 2;
-    justify-self: stretch;
-    background: $background-blue;
-
-    h3 {
-        color: $white;
-    }
+    background: $yellow;
 }
 
 .offering_tile_four {
-    grid-column-start: 6;
-    grid-column-end: 13;
-    grid-row: 2;
-    jusify-self: stretch;
-    background: $bright-blue;
+    background: $main-blue;
 }
 
 .offering_tile_five {
-    grid-column-start: 1;
-    grid-column-end: 5;
-    grid-row: 3;
-    jusify-self: stretch;
-    background: $main-blue;
-
-    h3 {
-        color: $white;
-    }
+    background: $bright-blue;
 }
 
 .offering_tile_six {
-    grid-column-start: 5;
-    grid-column-end: 13;
-    grid-row: 3;
-    justify-self: stretch;
-    background: $light-blue;
+    background: $yellow;
 }
+
+.offering_tile_seven {
+    background: $grey-blue;
+}
+
+.offering_tile_eight {
+    background: $main-blue;
+}
+
+@include breakpoint(portrait-large) {
+    .offering_tile_wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 364px 364px 364px 364px;
+        grid-gap: 16px 16px;
+        justify-content: stretch;
+        align-content: start;
+    }
+
+    .offering_tile_title {
+        padding-left: 1em;
+    }
+
+    .offering_para {
+        color: $white;
+        font-size: 1.5em;
+        padding-left: 2em;
+        padding-right: 1em;
+        margin: 0;
+    }
+
+    .offering_tile_one {
+        grid-column-start: 1;
+        grid-column-end: 7;
+        grid-row: 1;
+        justify-self: stretch;
+    }
+
+    .offering_tile_two {
+        grid-column-start: 7;
+        grid-column-end: 13;
+        grid-row: 1;
+        justify-self: stretch;
+    }
+
+    .offering_tile_three {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row: 2;
+        justify-self: stretch;
+    }
+
+    .offering_tile_four {
+        grid-column-start: 4;
+        grid-column-end: 13;
+        grid-row: 2;
+        jusify-self: stretch;
+    }
+
+    .offering_tile_five {
+        grid-column-start: 1;
+        grid-column-end: 7;
+        grid-row: 3;
+        jusify-self: stretch;
+    }
+
+    .offering_tile_six {
+        grid-column-start: 7;
+        grid-column-end: 13;
+        grid-row: 3;
+        justify-self: stretch;
+    }
+
+    .offering_tile_seven {
+        grid-column-start: 1;
+        grid-column-end: 5;
+        grid-row: 4;
+        justify-self:stretch;
+    }
+
+    .offering_tile_eight {
+        grid-column-start: 5;
+        grid-column-end: 13;
+        grid-row: 4;
+        justify-self:stretch;
+    }
+}
+
 
 
 /* BLOG CATEGORY ICON CARDS FOR BLOG INSPIRATION */
