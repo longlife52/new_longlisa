@@ -6,7 +6,6 @@
         width: 100%;
         height: auto;
     }
-
 }
 
 .square {
@@ -120,7 +119,6 @@
         }
     }
 
-
     .square_testimonial_wrapper {
         margin: 4em 3em 5em 10em;
     }
@@ -144,6 +142,11 @@
         grid-gap: em(16px) em(16px);
         justify-content: stretch;
         align-content: start;
+    }
+
+/* add this class when only using 2 squares in a layout  -- like testimonials + a pix */
+    .two_square_wrapper {
+        grid-template-rows: 400px;
     }
 
     .grid_square_one {

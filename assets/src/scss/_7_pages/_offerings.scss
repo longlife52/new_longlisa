@@ -8,6 +8,11 @@
     p {
         color: $dark-blue;
     }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
 }
 
 .offering_billboard {
@@ -69,6 +74,11 @@
 
 .offering_tile_three {
     background: $yellow;
+
+    img {
+        width: 100%;
+        height: auto;
+    }
 }
 
 .offering_tile_four {
@@ -81,6 +91,11 @@
 
 .offering_tile_six {
     background: $yellow;
+
+    img {
+        width: 100%;
+        height: auto;
+    }
 }
 
 .offering_tile_seven {
@@ -92,6 +107,20 @@
 }
 
 @include breakpoint(portrait-large) {
+
+    .offering_title_top {
+        font-size: 10em;
+    }
+
+    .offering_title_bottom {
+        font-size: 4em;
+    }
+
+    .billboard_para {
+        margin-top: 6em;
+
+    }
+
     .offering_tile_wrapper {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
