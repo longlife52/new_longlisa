@@ -6,13 +6,16 @@
 
 /* these styles create the line on either side of the first h2 of the title - taken from http://jessica-eldredge.com/2014/01/26/headings-with-lines/ */
 .title_line {
-    h2 {
+    h2,
+    h3  {
         display: flex;
         flex-direction: row;
         justify-content: center;
         text-align: center;
     }
 
+    h3:before,
+    h3:after,
     h2:before,
     h2:after {
         background-color: $yellow;
@@ -24,15 +27,27 @@
         max-width: 75px;
     }
 
+    h3:before,
     h2:before {
         margin-right: 10px;
     }
 
+    h3:after,
     h2:after {
         margin-left: 10px;
     }
 }
 
+.adjust_yellow_line {
+    h3:before,
+    h3:after {
+        top: 0.70em;
+        height: em(2px);
+    }
+}
+
+
+ /* styles for the billboard area; i flipped which h2 is first, so needed to adjust styles */
 .title_uppercase {
     text-transform: uppercase;
 }
@@ -47,6 +62,7 @@
     }
 }
 
+/* styles for the schedule items */
 .schedule_details {
     p {
         padding-bottom: 0;
@@ -66,14 +82,16 @@
     }
 }
 
+/*  styles for the grid 5 pix/quote block*/
 .five {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows:346px 346px;
-    grid-gap: 16px 16px;
+    grid-template-rows:em(346px) em(346px);
+    grid-gap: em(16px) em(16px);
     justify-content: stretch;
     align-content: start;
     overflow: hidden;
+    padding-bottom: 5em;
 
     img {
         width: 100%;
@@ -96,10 +114,15 @@
     grid-column-end: 6;
     jusify-self: stretch;
     background-color: $dark-blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     p {
         color: $white;
-        padding-left: 2em;
+        padding-left: .25em;
+        padding-right: .25em;
+        font-size: 3em;
     }
 }
 
@@ -118,10 +141,16 @@
     grid-column-end: 4;
     jusify-self: stretch;
     background: $main-blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
         p {
             color: $white;
             padding-left: 2em;
+            padding-left: .25em;
+            padding-right: .25em;
+            font-size: 3em;
         }
 }
 
@@ -133,7 +162,8 @@
     overflow: hidden;
     background-color: $yellow;
 }
-/* BREAKPOINTS for grid for individual listed classes */
+
+/* BREAKPOINTS for grid for individual listed classes and for the five grid pix/quote block */
 
 @include breakpoint (small){
     .title_size_increase {
