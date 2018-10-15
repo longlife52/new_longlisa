@@ -66,7 +66,73 @@
     }
 }
 
+.five {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows:346px 346px;
+    grid-gap: 16px 16px;
+    justify-content: stretch;
+    align-content: start;
+    overflow: hidden;
 
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.five_item_one {
+    grid-row: 1;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    jusify-self: stretch;
+    overflow: hidden;
+    background-color: $yellow;
+}
+
+.five_item_two {
+    grid-row: 1;
+    grid-column-start: 3;
+    grid-column-end: 6;
+    jusify-self: stretch;
+    background-color: $dark-blue;
+
+    p {
+        color: $white;
+        padding-left: 2em;
+    }
+}
+
+.five_item_three {
+    grid-row: 1;
+    grid-column-start: 6;
+    grid-column-end: 13;
+    jusify-self: stretch;
+    overflow: hidden;
+    background-color: $yellow;
+}
+
+.five_item_four {
+    grid-row: 2;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    jusify-self: stretch;
+    background: $main-blue;
+
+        p {
+            color: $white;
+            padding-left: 2em;
+        }
+}
+
+.five_item_five {
+    grid-row: 2;
+    grid-column-start: 4;
+    grid-column-end: 14;
+    jusify-self: stretch;
+    overflow: hidden;
+    background-color: $yellow;
+}
 /* BREAKPOINTS for grid for individual listed classes */
 
 @include breakpoint (small){
