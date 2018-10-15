@@ -58,6 +58,15 @@
     text-align: left;
 }
 
+.schedule_description {
+    p {
+        a {
+            color: $red;
+        }
+    }
+
+}
+
 
 /* BREAKPOINTS for grid for individual listed classes */
 
@@ -65,7 +74,7 @@
     .schedule_class_wrapper {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-        grid-template-rows: 364px 364px;
+        grid-template-rows: 364px 1fr;
     }
 
     .schedule_img {
@@ -91,6 +100,11 @@
 }
 
 @include breakpoint (medium) {
+    .schedule_class_wrapper {
+        grid-template-rows: 364px;
+        padding-bottom: 5em;
+    }
+
     .schedule_img {
         grid-column-start: 1;
         grid-column-end: 4;
@@ -98,7 +112,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        padding-left:1em;
+        padding-left:4em;
     }
 
     .schedule_details {
