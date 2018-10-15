@@ -1,4 +1,4 @@
-/* CLASSES PAGE STYLES */
+/* CLASSES PAGE STYLES + INDIVDUAL OFFERINGS such as Retreats, Workshops, Trainings */
 
 .title_space {
     padding-top: 5em;
@@ -64,13 +64,16 @@
             color: $red;
         }
     }
-
 }
 
 
 /* BREAKPOINTS for grid for individual listed classes */
 
 @include breakpoint (small){
+    .title_size_increase {
+        font-size: 8em;
+    }
+
     .schedule_class_wrapper {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -100,6 +103,11 @@
 }
 
 @include breakpoint (medium) {
+
+    .title_size_increase {
+        font-size: 10em;;
+    }
+
     .schedule_class_wrapper {
         grid-template-rows: 364px;
         padding-bottom: 5em;
