@@ -84,12 +84,6 @@
 
 /*  styles for the grid 5 pix/quote block*/
 .five {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows:em(346px) em(346px);
-    grid-gap: em(16px) em(16px);
-    justify-content: stretch;
-    align-content: start;
     overflow: hidden;
     padding-bottom: 5em;
 
@@ -100,19 +94,11 @@
 }
 
 .five_item_one {
-    grid-row: 1;
-    grid-column-start: 1;
-    grid-column-end: 3;
-    jusify-self: stretch;
     overflow: hidden;
     background-color: $yellow;
 }
 
 .five_item_two {
-    grid-row: 1;
-    grid-column-start: 3;
-    grid-column-end: 6;
-    jusify-self: stretch;
     background-color: $dark-blue;
     display: flex;
     justify-content: center;
@@ -127,19 +113,11 @@
 }
 
 .five_item_three {
-    grid-row: 1;
-    grid-column-start: 6;
-    grid-column-end: 13;
-    jusify-self: stretch;
     overflow: hidden;
     background-color: $yellow;
 }
 
 .five_item_four {
-    grid-row: 2;
-    grid-column-start: 1;
-    grid-column-end: 4;
-    jusify-self: stretch;
     background: $main-blue;
     display: flex;
     justify-content: center;
@@ -147,7 +125,6 @@
 
         p {
             color: $white;
-            padding-left: 2em;
             padding-left: .25em;
             padding-right: .25em;
             font-size: 3em;
@@ -155,10 +132,6 @@
 }
 
 .five_item_five {
-    grid-row: 2;
-    grid-column-start: 4;
-    grid-column-end: 14;
-    jusify-self: stretch;
     overflow: hidden;
     background-color: $yellow;
 }
@@ -198,6 +171,60 @@
     }
 }
 
+@include breakpoint (portrait) {
+    .five {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows:em(346px) em(346px);
+        grid-gap: em(7px) em(7px);
+        justify-content: stretch;
+        align-content: start;
+    }
+
+    .five_item_one {
+        grid-row: 1;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        jusify-self: stretch;
+    }
+
+    .five_item_two {
+        grid-row: 1;
+        grid-column-start: 3;
+        grid-column-end: 6;
+        jusify-self: stretch;
+
+        p {
+            font-size:2.5em;
+        }
+    }
+
+    .five_item_three {
+        grid-row: 1;
+        grid-column-start: 6;
+        grid-column-end: 13;
+        jusify-self: stretch;
+    }
+
+    .five_item_four {
+        grid-row: 2;
+        grid-column-start: 1;
+        grid-column-end: 4;
+        jusify-self: stretch;
+
+            p {
+                font-size: 2.5em;
+            }
+    }
+
+    .five_item_five {
+        grid-row: 2;
+        grid-column-start: 4;
+        grid-column-end: 14;
+        jusify-self: stretch;
+    }
+}
+
 @include breakpoint (medium) {
 
     .title_size_increase {
@@ -234,5 +261,24 @@
         align-items: center;
         padding-left: 0;
         padding-right:0;
+    }
+}
+
+@include breakpoint (landscape) {
+    .five {
+        grid-gap: em(16px) em(16px);
+    }
+
+    .five_item_two {
+
+        p {
+            font-size: 3em;
+        }
+    }
+
+    .five_item_four {
+            p {
+                font-size: 3em;
+            }
     }
 }
