@@ -106,13 +106,21 @@
     background: $main-blue;
 }
 
+/* BLOG CATEGORY ICON CARDS FOR BLOG INSPIRATION */
+/* THESE RELY ON STYLES FROM 3 CLASS CARDS AND ICON CARDS */
+
+.blog_category_title {
+    text-transform: uppercase;
+}
+
+/* responsive styles */
 @include breakpoint(portrait-large) {
 
-    .offering_title_top {
+    .offering_title_big {
         font-size: 10em;
     }
 
-    .offering_title_bottom {
+    .offering_title_small {
         font-size: 4em;
     }
 
@@ -197,13 +205,4 @@
         grid-row: 4;
         justify-self:stretch;
     }
-}
-
-
-
-/* BLOG CATEGORY ICON CARDS FOR BLOG INSPIRATION */
-/* THESE RELY ON STYLES FROM 3 CLASS CARDS AND ICON CARDS */
-
-.blog_category_title {
-    text-transform: uppercase;
 }
