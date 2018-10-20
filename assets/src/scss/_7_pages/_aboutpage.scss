@@ -40,6 +40,10 @@
     padding-left: 2em;
 }
 
+.story_title_pad {
+    padding-left: 1em;
+}
+
 .lisa_story_content {
     max-width: 500px;
     padding-left: em(20px);
@@ -106,6 +110,11 @@
 }
 
 @media (min-width: 700px) {
+
+    .story_title_pad {
+        padding-left: 0;
+    }
+
     .about_content {
         ul {
             li {
