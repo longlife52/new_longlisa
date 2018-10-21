@@ -1,0 +1,74 @@
+/* two grid items like on the testimonials page */
+.two_grid {
+
+}
+
+.two_grid_one {
+    background-color: $red;
+
+    h3 {
+        padding-top: 5em;
+        font-size: 2em;
+        padding-left: 2em;
+    }
+
+    p {
+        margin-bottom: 0;
+        padding-left: 0.5em;
+        padding-right: 0.5em;
+    }
+
+    p:last-child {
+        padding-bottom: 3em;
+    }
+}
+
+.two_grid_two {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $yellow;
+
+
+    img {
+        width: 100%;
+        height: auto;
+        padding-top: 7em;
+    }
+}
+
+@include breakpoint (portrait) {
+    .two_grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        align-content: start;
+        justify-content: stretch;
+    }
+
+    .two_grid_one {
+        grid-column-start: 1;
+        grid-column-end: 6;
+
+        h3 {
+
+        }
+
+        p {
+
+        }
+
+        p:last-child {
+
+        }
+    }
+
+    .two_grid_two {
+        grid-column-start: 6;
+        grid-column-end: 13;
+        grid-row: 1;
+
+        img {
+
+        }
+    }
+}
