@@ -1,39 +1,42 @@
 /* two grid items like on the testimonials page */
-.two_grid {
+.two_grid_one {
+
+    h3 {
+        font-size: 2em;
+        padding-left: 2em;
+        padding-right: 1em;
+        margin-top: 0;
+    }
 
 }
 
-.two_grid_one {
-    background-color: $red;
-
-    h3 {
-        padding-top: 5em;
-        font-size: 2em;
-        padding-left: 2em;
-    }
-
+.testimonial_feature_content {
     p {
         margin-bottom: 0;
-        padding-left: 0.5em;
-        padding-right: 0.5em;
+        padding-left: 1.5em;
+        padding-right: 1.5em;
+        font-size: 1.5em;
     }
+}
 
-    p:last-child {
-        padding-bottom: 3em;
-    }
+.saying_quote {
+    padding-top: 9em;
+    padding-left: 2em;
+}
+
+.testimonial_name {
+    margin-left: 2em;
 }
 
 .two_grid_two {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: $yellow;
 
 
     img {
         width: 100%;
         height: auto;
-        padding-top: 7em;
     }
 }
 
@@ -50,10 +53,12 @@
         grid-column-end: 6;
 
         h3 {
+            padding-left: 1.5em;
 
         }
 
         p {
+            padding-left: 3em;
 
         }
 
@@ -68,6 +73,7 @@
         grid-row: 1;
 
         img {
+            padding-top: 7em;
 
         }
     }
