@@ -31,8 +31,9 @@
     }
 }
 
-.blog_card {
+/* note the .blog_card is postion: relative so the round button and read time can have an absolute placement; a parent/ child relationship */
 
+.blog_card {
     background-color: $pale-grey-blue;
     position: relative;
 
@@ -54,4 +55,19 @@
         height: auto;
     }
 
+}
+
+/* READ TIME on blog cards */
+.readtime {
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    p {
+        text-transform: lowercase;
+        font-size: 1em;
+        text-align: left;
+        padding-left: 2em;
+    }
 }
