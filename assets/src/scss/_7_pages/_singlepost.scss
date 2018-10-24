@@ -1,5 +1,7 @@
 /* SINGLE BLOG POST PAGE STYLES */
 
+/* note the contextual callouts using css grid are based on this article https://jonathan-harrell.com/contextual-asides-with-css-grid/*/
+
 .blog_header_img {
 
     img {
@@ -49,8 +51,8 @@
     h1 {
         color: $white;
         text-align: center;
-        padding: 0.5em 0 1em 0;
-        font-size: 4em;
+        padding: 0.5em 1em 1em 1em;
+        font-size: 2em;
         margin: 0;
         text-align: center;
     }
@@ -128,6 +130,15 @@
     text-align: center;
     font-family: $cursive;
     font-size: 5em;
+}
+
+@include breakpoint (large-mobile) {
+
+    .blog_post_header {
+        h1 {
+            font-size: 4em;
+        }
+    }
 }
 
 @include breakpoint (small) {
