@@ -15,10 +15,41 @@
     border-bottom: 10px solid $yellow;
     margin-top: -0.5em;
 
+    p {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        text-align: center;
+        color: $white;
+        margin: 0;
+        text-transform: uppercase;
+        padding-top: 2em;
+        text-align: center;
+
+        &:before,
+        &:after {
+            background-color: $yellow;
+            content: '\a0';
+            flex-grow: 1;
+            height: em(2px);
+            position: relative;
+            top: .60em;
+            max-width: 50px;
+        }
+
+        &:before {
+            margin-right: em(5px);
+        }
+
+        &:after {
+            margin-left: em(5px);
+        }
+    }
+
     h1 {
         color: $white;
         text-align: center;
-        padding: 1em 0 1em 0;
+        padding: 0.5em 0 1em 0;
         font-size: 4em;
         margin: 0;
         text-align: center;
@@ -118,32 +149,7 @@
 @include breakpoint (regular-screen) {
     .blog_post_header {
 
-        h1 {
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            text-align: center;
 
-
-            &:before,
-            &:after {
-                background-color: $yellow;
-                content: '\a0';
-                flex-grow: 1;
-                height: em(2px);
-                position: relative;
-                top: .60em;
-                max-width: 75px;
-            }
-
-            &:before {
-                margin-right: em(5px);
-            }
-
-            &:after {
-                margin-left: em(5px);
-            }
-        }
     }
 
 }
