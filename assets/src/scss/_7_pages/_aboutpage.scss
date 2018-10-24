@@ -58,6 +58,14 @@
         font-weight: bold;
         font-size: 1.75em
     }
+
+    a {
+        color: $red;
+
+        &:hover {
+            color: $yellow;
+        }
+    }
 }
 
 .lisa_story_content {

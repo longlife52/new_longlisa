@@ -1,10 +1,19 @@
 /* SINGLE BLOG POST PAGE STYLES */
 
+.blog_header_img {
+
+    img {
+        height: auto;
+        width: 100%;
+        padding-top: 3em;
+        background-color:$background-blue;
+    }
+}
+
 .blog_post_header {
     background-color: $background-blue;
     border-bottom: 10px solid $yellow;
     margin-top: -0.5em;
-
 
     h1 {
         color: $white;
