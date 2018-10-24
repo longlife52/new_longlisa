@@ -10,7 +10,13 @@
         text-align: center;
         padding: 1em 0 1em 0;
         font-size: 6em;
+        margin: 0;
     }
+}
+
+.blog_post_meta {
+    text-align: center;
+    padding-bottom: 3em;
 }
 
 .blog_post_content {
@@ -24,6 +30,77 @@
     }
 }
 
+/* blog post author section; check wp for classes */
+.author_wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8em;
+}
+
+.blog_author_area {
+    background-color: $pale_grey_blue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.blog_author_img {
+    img {
+        border-radius: 50%;
+
+    }
+}
+
+.blog_author_details {
+    padding-top: 1em;
+
+    p {
+        padding-right: 1em;
+        margin: 0;
+    }
+
+    a {
+        color: $red;
+
+        &:hover {
+            color: $yellow;
+        }
+    }
+}
+
+.blog_author_about {
+    text-align: center;
+}
+
+.blog_author_name {
+    font-size: 2em;
+    text-align: center;
+}
+
+.blog_author_bio {
+    padding-left: 2em;
+}
+
+@include breakpoint (small) {
+
+    .blog_author_area {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        max-width: 750px;
+        justify-content: center;
+        align-items: center;
+        background-color: $pale_grey_blue;
+    }
+
+    .blog_author_details {
+        padding-top: 2em;
+    }
+}
+
+
+/* styles for large cursive quote block */
 .blog_large_quote {
     background-color: $main-blue;
     color: white;
