@@ -45,8 +45,22 @@
     padding-left: 1em;
 }
 
-.lisa_story_content {
+.lisa_story_width {
     max-width: 500px;
+}
+
+.lisa_story_para {
+
+    p:first-of-type {
+        border-left: em(3px) solid $yellow;
+        margin-left: 0.15em;
+        padding-left: 1em;
+        font-weight: bold;
+        font-size: 1.75em
+    }
+}
+
+.lisa_story_content {
     padding-left: em(20px);
     padding-right: em(20px);
     margin: auto;

@@ -2,6 +2,7 @@
 
 .blog_post_header {
     background-color: $background-blue;
+    border-bottom: 10px solid $yellow;
     margin-top: -0.5em;
 
 
@@ -20,14 +21,7 @@
 }
 
 .blog_post_content {
-
-    p:first-of-type {
-        border-left: em(3px) solid $yellow;
-        margin-left: 0.15em;
-        padding-left: 1em;
-        font-weight: bold;
-        font-size: 1.75em
-    }
+        display: grid;
 }
 
 /* blog post author section; check wp for classes */
@@ -77,6 +71,7 @@
 .blog_author_name {
     font-size: 2em;
     text-align: center;
+    padding-bottom: .5em;
 }
 
 .blog_author_bio {
