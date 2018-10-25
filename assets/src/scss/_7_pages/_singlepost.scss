@@ -63,10 +63,6 @@
     padding-bottom: 3em;
 }
 
-.blog_post_content {
-        display: grid;
-}
-
 /* blog post author section; check wp for classes */
 .author_wrapper {
     display: flex;
@@ -160,7 +156,19 @@
 @include breakpoint (regular-screen) {
     .blog_post_header {
 
+    }
 
+    .blog_post_content {
+            display: grid;
+            grid-template-columns:  repeat(12, 1fr);
+            grid-column-gap: em(32px);
+
+            p,
+            ol,
+            ul {
+                grid-column-start: 5;
+                grid-column-end: span 6;
+            }
     }
 
 }
