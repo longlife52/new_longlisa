@@ -65,6 +65,35 @@
 
 .blog_post_content {
 
+    p {
+        color: $dark-blue;
+        font-size: 1.5em;
+        padding-right: .5em;
+        padding-left: em(20px);
+        padding-right: em(20px);
+    }
+
+    ul,
+    ol {
+        list-style: none;
+
+
+    ol {
+        counter-reset: li;
+
+    }
+
+        li {
+            font-family: $roboto;
+            font-size: 2em;
+            color: $dark-blue;
+            padding-bottom: 0.5em;
+            padding-left: em(20px);
+            padding-right: em(20px);
+
+        }
+    }
+
     aside {
         margin-left: 1.5em;
         margin-right: 0.5em;

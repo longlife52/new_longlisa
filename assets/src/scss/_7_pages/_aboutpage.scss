@@ -45,10 +45,6 @@
     padding-left: 1em;
 }
 
-.lisa_story_width {
-    max-width: 500px;
-}
-
 .lisa_story_para {
 
     p:first-of-type {
@@ -56,7 +52,10 @@
         margin-left: 0.15em;
         padding-left: 1em;
         font-weight: bold;
-        font-size: 1.75em
+        font-size: 1.75em;
+        margin-left: em(20px);
+        padding-right: em(20px);
+
     }
 
     a {
@@ -64,36 +63,6 @@
 
         &:hover {
             color: $yellow;
-        }
-    }
-}
-
-.lisa_story_content {
-    padding-left: em(20px);
-    padding-right: em(20px);
-    margin: auto;
-
-    p {
-        color: $dark-blue;
-        font-size: 1.5em;
-        padding-right: .5em;
-    }
-
-    ul,
-    ol {
-        list-style: none;
-
-    ol {
-        counter-reset: li;
-
-    }
-
-        li {
-            font-family: $roboto;
-            font-size: 2em;
-            color: $dark-blue;
-            padding-bottom: 0.5em;
-
         }
     }
 }
