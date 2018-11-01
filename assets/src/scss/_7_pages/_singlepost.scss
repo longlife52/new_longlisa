@@ -95,8 +95,8 @@
     }
 
     aside {
-        margin-left: 4em;
-        margin-right: 0.5em;
+        margin-left: 2em;
+        margin-right: 1em;
 
         h6 {
             border-left: em(3px) solid $light-blue;
@@ -111,7 +111,9 @@
         display: grid;
         grid-template-columns: repeat(12, 1fr);
         grid-template-rows: 1fr em(100px);
+        /*
         grid-column-gap: em(32px);
+        */
         padding-top: 3em;
         margin: 0;
         grid-column-start: 1;
@@ -136,6 +138,15 @@
     }
 }
 
+@media (min-width: 350px) {
+    .blog_post_content {
+        aside {
+            margin-left: 4em;
+            margin-right: 0.5em;
+        }
+    }
+}
+
 /* blog post author section; check wp for classes */
 .author_wrapper {
     display: flex;
@@ -153,6 +164,7 @@
 }
 
 .blog_author_img {
+
     img {
         border-radius: 50%;
         width: 100%;
@@ -228,7 +240,6 @@
 
 @include breakpoint (landscape) {
     .blog_post_header {
-
     }
 
     .blog_post_subtitle {

@@ -155,3 +155,27 @@
         transition: background-color 0.3s ease-in, color 0.3s ease-in;
     }
 }
+
+//SCROLL to top button
+/* this is from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_scroll_to_top
+*/
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: map-get($zindex, overlay);
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+
+    &:hover {
+        background-color: #555;
+    }
+}

@@ -138,6 +138,10 @@ header {
     display: none;
   }
 
+  .nav-toggle {
+      display: block;
+  }
+
   header {
     display: grid;
     grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr;
