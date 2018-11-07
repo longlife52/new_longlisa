@@ -121,6 +121,8 @@ header {
     }
 }
 
+// styles the nav for mobile
+// when the nav checkbox is checked
 .nav-toggle:checked ~ nav {
   transform: scale(1,1);
 }
@@ -140,6 +142,16 @@ header {
 
   .nav-toggle {
       display: block;
+  }
+
+  // overrides mobile navigation
+  .nav-toggle ~ nav.nav {
+    transform: scale(1,1);
+  }
+
+  // overrides mobile navigation
+  .nav-toggle ~ nav.nav ul li a {
+    opacity: 1;
   }
 
   header {

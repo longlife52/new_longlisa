@@ -12,11 +12,11 @@ function SiteController($)
 {
 	self.init = function()
 	{
-		initFitVid();
+		//initFitVid();
 	}
 
 	// MAKES VIDEOS RESIZE RESPONSIVELY
-	function initFitVid() {
+	/* function initFitVid() {
 
 		// TARGET YOUTUBE
 		$('iframe[src*="youtube"]').parent().fitVids();
@@ -24,29 +24,48 @@ function SiteController($)
 		// TARGET VIMEO
 		$('iframe[src*="vimeo"]').parent().fitVids();
 
-	}
+	} */
 
 	return self;
 }
 
-//the code below for the scroll button is from
-/* https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_scroll_to_top
-*/
+//this show / hide button from https://www.templatemonster.com/blog/back-to-top-button-css-jquery/
 
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
+jQuery(document).ready(function() {
 
-function scrollFunction() {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        document.getElementById("myBtn").style.display = "block";
+  var btn = $('#button');
+
+  $(window).scroll(function() {
+    if ($(window).scrollTop() > 300) {
+      btn.addClass('show');
+    } else {
+      btn.removeClass('show');
     }
-    else {
-        document.getElementById("myBtn").style.display = "none";
-    }
-}
+  });
 
-// When the user clicks on the button, scroll to the top of the document
-function topFunction() {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
-}
+    // code below from Amy Dutton - https://gist.github.com/ahaywood/d628596f4a5e7487c26b83096fd0530f
+
+    $('.js-scroll-to-top').click(function(e){
+		e.preventDefault();	// prevent the default browser action
+	    var goto = $('#top');	// grab the #top element
+	    var contentPosTop = $(goto).position().top - 50;	// determine the position from the top of the page
+
+	    // Animate to that position
+	    $('html, body').stop().animate({
+	        scrollTop: contentPosTop
+	    }, 1500);
+	});
+
+    var lastScrollTop = 0;
+		$(window).scroll(function(event) {
+			var st = $(this).scrollTop();
+			if (st > lastScrollTop) {
+				// downscroll code
+				$(".back_to_top").addClass("scroll-down");
+			} else if (st < 25) {
+				// upscroll code
+				$(".back_to_top").removeClass("scroll-down");
+			}
+			lastScrollTop = st;
+		});
+});
