@@ -29,19 +29,22 @@ function SiteController($)
 	return self;
 }
 
-//this show / hide button from https://www.templatemonster.com/blog/back-to-top-button-css-jquery/
+// for nav current page highlight
+// code FROM
+// http://huidesign.com/automatically-highlight-current-page-in-navigation-with-css-jquery/
 
-jQuery(document).ready(function() {
+$(document).ready(function(){
 
-  var btn = $('#button');
+var str=location.href.toLowerCase();
 
-  $(window).scroll(function() {
-    if ($(window).scrollTop() > 300) {
-      btn.addClass('show');
-    } else {
-      btn.removeClass('show');
-    }
-  });
+$(".navigation li a").each(function() {
+if (str.indexOf(this.href.toLowerCase()) > -1) {
+ $("li.highlight").removeClass("highlight");
+$(this).parent().addClass("highlight");
+}
+ });
+ })
+
 
     // code below from Amy Dutton - https://gist.github.com/ahaywood/d628596f4a5e7487c26b83096fd0530f
 
