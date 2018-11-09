@@ -1,0 +1,204 @@
+/* FLIP CARDS using Grid + Flex Box */
+
+/* code below controls the responsive grid that contains the cards */
+.flex_flip_container {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+@include breakpoint (large-mobile) {
+
+    .flex_flip_container {
+        grid-template-columns: repeat(12, 1fr);
+        grid-gap: em(20px);
+        max-width: 500px;
+        margin: auto;
+        padding: em(20px) 0 em(20px) 0;
+    }
+
+    .flip_one {
+        grid-column-start: 1;
+        grid-column-end: 6;
+        grid-row: 1;
+    }
+
+    .flip_two {
+        grid-column-start: 7;
+        grid-column-end: 13;
+        grid-row: 1;
+    }
+
+    .flip_three {
+        grid-column-start: 1;
+        grid-column-end: 6;
+        grid-row: 2;
+    }
+
+    .flip_four {
+        grid-column-start: 7;
+        grid-column-end: 13;
+        grid-row: 2;
+    }
+}
+
+@include breakpoint (smaller-screen) {
+
+    .flex_flip_container {
+        max-width: 950px;
+    }
+
+    .flip_one,
+    .flip-two,
+    .flip_three,
+    .flip_four {
+        grid-row: 1;
+    }
+
+    .flip_one {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    .flip_two {
+        grid-column-start: 4;
+        grid-column-end: 6;
+    }
+
+    .flip_three {
+        grid-column-start: 7;
+        grid-column-end: 9;
+    }
+
+    .flip_four {
+        grid-column-start: 10;
+        grid-column-end: 13;
+    }
+}
+
+/*
+@include breakpoint (smaller-screen) {
+
+    .flex_flip_container {
+        display: flex;
+        justify-content: space-around;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        position: relative;
+    }
+}
+*/
+
+
+/* code from here down controls the cards and how they look + flip */
+/*  based on the following for flexbox flip
+https://codepen.io/vincesamoy/pen/mEmqbJ */
+
+.flex_item {
+	color: $white;
+	height: 210px;
+	margin: em(10px) 0;
+	padding: 0;
+	width: 225px;
+	position: relative;
+}
+.flex_item_inner {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	height: 210px;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+.flex-item-inner a {
+	color: $white;
+	cursor: pointer;
+}
+
+/*-------- cards --------*/
+.card-front,
+.card-back {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 185px;
+	height: 170px;
+	padding: em(20px);
+	margin: 0;
+	backface-visibility: hidden;
+	transition: transform 0.3s;
+	justify-content: flex-end;
+}
+
+.flip_img {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+
+    img {
+        width: 30%;
+        height: 30%;
+    }
+}
+
+.card-front h4 {
+	font-size: em(24px);
+	font-weight: normal;
+	margin: em(10px) 0;
+    color: $white;
+    text-align: center;
+}
+.card-front p.detail {
+	font-size: em(20px);
+	font-weight: bold;
+    text-transform: uppercase;
+	margin: 0;
+    color: $white;
+    text-align: center;
+}
+.card-front.bg-bright {
+	background-color: $bright-blue;
+}
+.card-front.bg-dark {
+	background-color: $dark-blue;
+}
+.card-front.bg-blue {
+	background-color: $main-blue;
+}
+
+.card-back {
+	background-color: $pale-grey-blue;
+	transform: rotateY(-180deg);
+
+}
+.card-back p.title {
+	color: $dark-blue;
+	margin-top: 0;
+	text-transform: uppercase;
+
+}
+.card-back p.desc {
+	color: $dark-blue;
+}
+.card-back p.link {
+	color: $dark-blue;
+    text-transform: lowercase;
+    font-weight: bold;
+    background-color: $yellow;
+    text-align: center;
+    padding: em(5px);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-right: em(20px);
+}
+
+/*-------- cards / flip effect --------*/
+.flex_item:hover .card-front {
+	transform: rotateY(-180deg);
+}
+.flex_item:hover .card-back {
+	transform: rotateY(0);
+}
