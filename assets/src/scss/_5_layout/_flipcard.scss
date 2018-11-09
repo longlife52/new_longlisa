@@ -76,21 +76,6 @@
     }
 }
 
-/*
-@include breakpoint (smaller-screen) {
-
-    .flex_flip_container {
-        display: flex;
-        justify-content: space-around;
-        list-style: none;
-        margin: 0;
-        padding: 0;
-        position: relative;
-    }
-}
-*/
-
-
 /* code from here down controls the cards and how they look + flip */
 /*  based on the following for flexbox flip
 https://codepen.io/vincesamoy/pen/mEmqbJ */

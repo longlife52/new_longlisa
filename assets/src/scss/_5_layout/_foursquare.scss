@@ -65,7 +65,7 @@
         position: absolute;
         width: em(40px);
         margin-left: 2em;
-        margin-top: 2em;
+        margin-top: -8em;
     }
 
 }
@@ -115,7 +115,7 @@
         img {
             width: em(100px);
             margin-left: 2em;
-            margin-top: 2em;
+            margin-top: -5em;
         }
     }
 
@@ -124,16 +124,16 @@
     }
 }
 
+/*
 @include breakpoint(small) {
 
     .square_three {
         img {
-            width: em(100px);
-            margin-left: 2em;
-            margin-top: 2em;
+
         }
     }
 }
+*/
 
 @include breakpoint(portrait-large) {
     .four_square_wrapper {
@@ -185,8 +185,7 @@
     .square_three {
         img {
             width: em(75px);
-            margin-left: 2em;
-            margin-top: 2em;
+            margin-top: -8em;
         }
     }
 
