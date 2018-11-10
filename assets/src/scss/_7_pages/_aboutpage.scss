@@ -1,7 +1,8 @@
 /* ABOUT PAGE STYLES */
 
-.about {
-    background: $light-blue    url(assets/dist/img/flower_purple.jpg);
+.about_lisa {
+    background: url("../img/about_lisabkg.jpg");
+    background-color: $light-blue;
     margin-top: 6em;
     border-top: none;
 }
