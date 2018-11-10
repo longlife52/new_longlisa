@@ -28,7 +28,8 @@
 
 .img_circle {
     border-radius: 50%;
-    box-shadow: em(5px) em(10px) $light-blue;
+    border: 3px solid $white;
+    box-shadow: em(5px) em(10px) $light-grey-blue;
 }
 
 .about_content_wrapper {
