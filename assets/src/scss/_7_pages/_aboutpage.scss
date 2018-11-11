@@ -99,6 +99,26 @@
     margin-bottom: 0;
 }
 
+.community_give {
+    margin: auto;
+    padding: 4em 0;
+
+    h3 {
+        text-align: center;
+        color: $dark-blue;
+        font-size: 2em;
+    }
+}
+
+.community_give_description {
+    margin: auto;
+    max-width: 600px;
+    padding: 0  2em;
+}
+
+
+/* ______________ media queries ____________ */
+
 @include breakpoint(next-mobile) {
     .lisa_story_title {
 
@@ -127,6 +147,7 @@
     .about_lisa {
         margin-top: 0;
     }
+
     .about_content {
         h3 {
             font-size: 2.5em;
