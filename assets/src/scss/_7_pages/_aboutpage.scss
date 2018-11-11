@@ -33,6 +33,12 @@
     place-items: center center;
     margin-bottom: 3em;
 
+    h1 {
+        margin: 0;
+        font-size: 3em;
+        color: $dark-blue;
+    }
+
     h3 {
         margin: 0;
         font-size: 2em;
