@@ -63,23 +63,6 @@
     align-self: center;
 }
 
-.community_give {
-    margin: auto;
-    padding: 4em 0;
-
-    h3 {
-        text-align: center;
-        color: $dark-blue;
-        font-size: 2em;
-    }
-}
-
-.community_give_description {
-    margin: auto;
-    max-width: 600px;
-    padding: 0  2em;
-}
-
 @include breakpoint(large-mobile) {
     .about_content_wrapper {
             margin-bottom: 2em;

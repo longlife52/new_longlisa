@@ -65,12 +65,24 @@
 
 .blog_post_content {
 
+    h2,
+    p {
+        padding-right: em(20px);
+    }
+
+    h2 {
+        margin-bottom: -0.5em;
+        padding-top: 1em;
+        color: $red;
+        font-size: 2em;
+        padding-left: em(15px);
+
+    }
+
     p {
         color: $dark-blue;
         font-size: 1.5em;
-        padding-right: .5em;
         padding-left: em(20px);
-        padding-right: em(20px);
     }
 
     ul,
@@ -293,20 +305,4 @@
                     }
             }
         }
-
-
-
-
-/*
-.blog_aside {
-    margin-left: 0;
-    margin-top: 0;
-    grid-column-start: 2;
-    grid-column-end: 4;
-
-        h6 {
-            margin-bottom: 0;
-        }
-    }
-*/
 }
