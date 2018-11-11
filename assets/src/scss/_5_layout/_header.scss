@@ -11,7 +11,7 @@ header {
 
 
 
-    h1 {
+    h2 {
         color: $white;
         font-weight: 100;
         font-size: em(14px);
@@ -162,7 +162,7 @@ header {
     display: grid;
     grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr;
 
-    h1 {
+    h2 {
         padding-bottom: 1em;
         padding-top: 1em;
     }
