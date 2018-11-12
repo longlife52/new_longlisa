@@ -118,7 +118,9 @@
     h3 {
         text-align: center;
         color: $dark-blue;
-        font-size: 2em;
+        font-size: 3em;
+        padding-left: 1em;
+        padding-right: 1em;
     }
 }
 
@@ -126,6 +128,10 @@
     margin: auto;
     max-width: 600px;
     padding: 0  2em;
+
+    p {
+        font-size: 1.5em;
+    }
 }
 
 /* ______________ media queries ____________ */
