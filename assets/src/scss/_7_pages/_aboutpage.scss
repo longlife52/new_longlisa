@@ -1,10 +1,14 @@
 /* ABOUT PAGE STYLES */
 
 .about_lisa {
-    background: url("../img/about_lisabkg.jpg");
-    background-color: $light-blue;
-    margin-top: 6em;
+    background-color: $dark-blue;
+    padding-top: 6.5em;
     border-top: none;
+}
+
+.about_background {
+    background: url("../img/about_lisabkg.jpg");
+    margin-bottom: 0;
 }
 
 .about_content {
@@ -22,6 +26,10 @@
             padding-bottom: 0.5em;
         }
     }
+}
+
+.about_content_space {
+    margin-top: 2em;
 }
 
 .lisa_story {
@@ -122,7 +130,6 @@
     padding: 0  2em;
 }
 
-
 /* ______________ media queries ____________ */
 
 @include breakpoint(next-mobile) {
@@ -140,6 +147,16 @@
         padding-left: 0;
     }
 
+    .about_wrapper_space {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .about_content_space {
+        padding-left: 0;
+        margin-top: 6em;
+    }
+
     .about_content {
         ul {
             li {
@@ -152,6 +169,12 @@
 @include breakpoint(smaller-screen) {
     .about_lisa {
         margin-top: 0;
+        padding-top: 5em;
+    }
+
+    .about_content_space {
+        margin-top: 8em;
+        padding-right: 3em;
     }
 
     .about_content {
@@ -165,5 +188,16 @@
             }
         }
     }
+}
 
+@include breakpoint (landscape) {
+
+    .about_content_space {
+        margin-top: 5em;
+        padding-right: 13em;
+    }
+
+    .lisa_img_wrapper {
+        margin-left: 15em;
+    }
 }
