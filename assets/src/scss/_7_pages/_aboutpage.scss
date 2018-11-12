@@ -67,13 +67,11 @@
 
     p:first-of-type {
         border-left: em(3px) solid $yellow;
-        margin-left: 0.15em;
-        padding-left: 1em;
         font-weight: bold;
         font-size: 1.75em;
         margin-left: em(20px);
+        padding-left: 1em;
         padding-right: em(20px);
-
     }
 
     a {

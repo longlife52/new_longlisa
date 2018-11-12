@@ -270,10 +270,15 @@
             grid-template-columns:  repeat(12, 1fr);
             grid-column-gap: em(32px);
 
+            h2,
             p {
                 grid-column-start: 5;
                 grid-column-end: span 6;
                 padding-left: 0;
+            }
+
+            h2 {
+
             }
 
             ol,
