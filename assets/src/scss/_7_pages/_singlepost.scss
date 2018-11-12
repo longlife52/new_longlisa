@@ -146,6 +146,10 @@
             font-family: $roboto;
             color: $main-blue;
             padding-top: 1em;
+
+            a {
+                color: $grey-blue;
+            }
         }
     }
 }
