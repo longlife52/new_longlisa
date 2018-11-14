@@ -1,8 +1,10 @@
 /* CONTACT page styles */
 
 .contact_lisa {
-    margin-top: 8em;
     padding: 0 em(20px) 0 em(20px);
+    max-width: 650px;
+    margin: auto;
+    margin-top: 8em;
 
     h1,
     p {
@@ -16,5 +18,6 @@
 
     p {
         font-size: 1.5em;
+
     }
 }
